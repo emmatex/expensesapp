@@ -1,6 +1,6 @@
 ﻿namespace Expenses.Api.Models.Users
 {
-    public class UserModel
+    public class UserModel : UserManipulationModel
     {
         public UserModel()
         {
@@ -8,10 +8,6 @@
         }
 
         public int Id { get; set; }
-        public string Username { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-
         public string[] Roles { get; set; }
     }
 }
