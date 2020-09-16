@@ -1,5 +1,4 @@
 ﻿using Expenses.Data.Model;
-using System;
 
 namespace Expenses.Queries.Models
 {
@@ -7,6 +6,6 @@ namespace Expenses.Queries.Models
     {
         public string Token { get; set; }
         public User User { get; set; }
-        public DateTime ExpiresAt { get; set; }
+        public System.DateTime ExpiresAt { get; set; }
     }
 }

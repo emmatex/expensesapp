@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Expenses.Api.Common.Exceptions
+﻿namespace Expenses.Api.Common.Exceptions
 {
-    public class NotFoundException : Exception
+    public class NotFoundException : System.Exception
     {
         public NotFoundException(string message) : base(message)
         {

@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Expenses.Api.Common.Exceptions
+﻿namespace Expenses.Api.Common.Exceptions
 {
-    public class BadRequestException : Exception
+    public class BadRequestException : System.Exception
     {
         public BadRequestException(string message) : base(message)
         {

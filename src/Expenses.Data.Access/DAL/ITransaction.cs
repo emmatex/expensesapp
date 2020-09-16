@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Expenses.Data.Access.DAL
+﻿namespace Expenses.Data.Access.DAL
 {
-    public interface ITransaction : IDisposable
+    public interface ITransaction : System.IDisposable
     {
         void Commit();
         void Rollback();
