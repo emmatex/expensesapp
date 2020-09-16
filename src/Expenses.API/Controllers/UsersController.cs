@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Expenses.Api.Models.Users;
 using Expenses.API.Filters;
@@ -20,8 +21,8 @@ namespace Expenses.API.Controllers
 
         public UsersController(IUsersQueryProcessor query, IAutoMapper mapper)
         {
-            _query = query;
-            _mapper = mapper;
+            _query = query ?? throw new ArgumentNullException(nameof(query));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
         [HttpGet]
