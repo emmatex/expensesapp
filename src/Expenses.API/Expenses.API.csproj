@@ -5,6 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="AutoQueryable.AspNetCore.Filter" Version="0.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Expenses.Api.Common\Expenses.Api.Common.csproj" />
     <ProjectReference Include="..\Expenses.Api.Models\Expenses.Api.Models.csproj" />
     <ProjectReference Include="..\Expenses.Data.Access\Expenses.Data.Access.csproj" />
